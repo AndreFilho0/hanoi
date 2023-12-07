@@ -10,9 +10,9 @@ public class Jogo {
         try {
 
             t1.setNumDiscos(Integer.parseInt(JOptionPane.showInputDialog(null,
-                    "Entre com o primeiro número:")));
+                    "qual a quantidade de discos ?")));
             if (t1.getNumDiscos()<=0){
-                JOptionPane.showMessageDialog(null,"não aceitamos valor negativo");
+                JOptionPane.showMessageDialog(null,"não aceitamos valor negativo ou zero");
                 return;
             }
             JOptionPane.showMessageDialog(null,"total de movimentos: "+t1.calculoQtMovimento());
